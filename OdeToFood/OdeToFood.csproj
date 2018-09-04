@@ -5,6 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\bootstrap\**" />
+    <Compile Remove="wwwroot\jquery-validation-unobtrusive\**" />
+    <Compile Remove="wwwroot\jquery-validation\**" />
+    <Compile Remove="wwwroot\jquery\**" />
+    <Content Remove="wwwroot\bootstrap\**" />
+    <Content Remove="wwwroot\jquery-validation-unobtrusive\**" />
+    <Content Remove="wwwroot\jquery-validation\**" />
+    <Content Remove="wwwroot\jquery\**" />
+    <EmbeddedResource Remove="wwwroot\bootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\jquery-validation-unobtrusive\**" />
+    <EmbeddedResource Remove="wwwroot\jquery-validation\**" />
+    <EmbeddedResource Remove="wwwroot\jquery\**" />
+    <None Remove="wwwroot\bootstrap\**" />
+    <None Remove="wwwroot\jquery-validation-unobtrusive\**" />
+    <None Remove="wwwroot\jquery-validation\**" />
+    <None Remove="wwwroot\jquery\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
@@ -23,6 +42,10 @@
     <Content Update="Pages\_ViewStart.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="node_modules\" />
   </ItemGroup>
   
 </Project>
