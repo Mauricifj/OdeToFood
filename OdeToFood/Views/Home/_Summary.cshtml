@@ -1,0 +1,15 @@
+﻿@model Restaurant
+
+<section class="card text-center" style="width: 18rem;">
+    <h3 class="card-heading">@Model.Name</h3>
+    <div class="card-text">
+        Cuisine: @Model.Cuisine
+    </div>
+    <div class="card-text">
+        Id: @Model.Id
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-success btn-sm" asp-action="Details" asp-route-id="@Model.Id">More</a>
+        <a class="btn btn-warning btn-sm" asp-page="/Restaurants/Edit" asp-route-id="@Model.Id">Edit</a>
+    </div>
+</section>
